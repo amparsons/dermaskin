@@ -1,0 +1,2771 @@
+/*
+	Theme Name: Dermaskin
+	Theme URI: http://www.amparsons.co.uk/
+	Author: Annemarie Parsons 
+	Version: 1.1
+	
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"], [role="button"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: Annemarie Parsons - amparsons.co.uk
+   
+   Colours:
+   Dark Brown: #6E5A51
+   Light Brown: #928177
+   ========================================================================== */
+/* Fonts */
+@font-face {
+    font-family: 'BreeRgRegular';
+    src: url('fonts/breeregular-webfont.eot');
+    src: url('fonts/breeregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/breeregular-webfont.woff') format('woff'),
+         url('fonts/breeregular-webfont.ttf') format('truetype'),
+         url('fonts/breeregular-webfont.svg#BreeRgRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}  
+@font-face {
+    font-family: 'BreeRgBold';
+    src: url('fonts/breebold-webfont.eot');
+    src: url('fonts/breebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/breebold-webfont.woff') format('woff'),
+         url('fonts/breebold-webfont.ttf') format('truetype'),
+         url('fonts/breebold-webfont.svg#BreeRgBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BreeLtLight';
+    src: url('fonts/breelight-webfont.eot');
+    src: url('fonts/breelight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/breelight-webfont.woff') format('woff'),
+         url('fonts/breelight-webfont.ttf') format('truetype'),
+         url('fonts/breelight-webfont.svg#BreeLtLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BreeRgOblique';
+    src: url('fonts/breeoblique_reg-webfont.eot');
+    src: url('fonts/breeoblique_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/breeoblique_reg-webfont.woff') format('woff'),
+         url('fonts/breeoblique_reg-webfont.ttf') format('truetype'),
+         url('fonts/breeoblique_reg-webfont.svg#BreeRgOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JournalRegular';
+    src: url('fonts/journal-webfont.eot');
+    src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/journal-webfont.woff') format('woff'),
+         url('fonts/journal-webfont.ttf') format('truetype'),
+         url('fonts/journal-webfont.svg#JournalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+   
+/* Reset by Annemarie */
+h1, h2, h3, h4, h5, h6
+{
+	margin:0;
+	font-weight:normal;
+}
+p
+{
+	margin:0;
+}
+ul
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+img
+{
+	max-width:100%;
+}
+a,
+a:visited,
+a:active
+{
+	color:#ba94c7;
+	text-decoration:none;
+}
+a:hover
+{
+	text-decoration:underline;
+}
+
+.wp-caption {
+	width:91% !important;
+}
+@media only screen and (min-width: 400px) {
+	.wp-caption {
+		width:50% !important;
+	}
+}
+
+/*
+ * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
+ */
+
+body
+{
+	font-size:16px;
+	color:#003a57;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(img/global/header-bg.jpg) repeat top left;
+}
+
+.wrapper
+{
+
+	width:98%;
+	margin:0 1%;
+}
+
+/* Header */
+header
+{
+	width:100%;
+	display:inline-block;
+}
+.topbar
+{
+	color:#89A3B0;
+	width:97.89473684210526%; /* 930px / 950px */
+	/*height:2.5em;  41px / 16px */
+	padding:0.8125em 1.57894736842105%; /*  13px / 16px | 15px / 950px */
+	background-color:#013A57;
+	font-size:0.875em; /* 14px */
+}
+.topbar p span
+{
+	color:#fff;
+	font-weight:bold;
+}
+.topbar a
+{
+	color:#fff;
+	text-decoration:none;
+}
+.logo
+{
+	float:left;
+	width:297px;
+	height:54px;
+	display:block;
+	margin:1.25em 0; /* 20px / 16px  */
+	background:url(img/global/dermaskin-logo.png) no-repeat top left;
+}
+.strapline
+{
+	
+	float:left;
+	color:#013A57;
+	font-style:italic;
+	font-size:16px;
+	line-height:18px;
+	margin-bottom:1.25em;
+	font-family: 'BreeLtLight';
+}
+.topbarlinks
+{
+	float:right;
+	position:relative;
+	margin:0 0 20px 0;
+}
+.topbarlinks li
+{
+	float:left;
+	position:relative;
+}
+.topbarlinks li a.refer
+{
+	width:40px;
+	height:40px;
+	display:block;
+	z-index:200;
+	background:url(img/icons/refer-a-friend.png) no-repeat 0 0;
+}
+.topbarlinks li .login-content 
+{
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width:300px;
+	z-index: 9999;
+	padding: 20px;    
+	background: #a3bb80; 
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;   
+}
+.topbarlinks li .login-content h2
+{
+	font-size:16px;
+	color:#fff;;
+}
+.topbarlinks li .login-content p
+{
+	font-size:12px;
+	color:#fff;
+	line-height:17px;
+}
+.topbarlinks li .login-content span
+{
+	font-size:12px;
+	display:block;
+	font-style:italic;
+	color:#fff;
+	line-height:17px;
+	margin-top:5px;
+}
+.topbarlinks li .login-content input
+{
+	width:290px;
+	padding:5px;
+	color:#6e5a51;
+	font-size:12px;
+	border:1px solid #fff;
+	margin-top:10px;
+}
+.topbarlinks li .login-content input[type="submit"]
+{
+	width:100px;
+}
+#messageSent
+{
+	display:none;
+}
+
+
+.topbarlinks li a.twitter
+{
+	width:40px;
+	height:40px;
+	display:block;
+	background:url(img/icons/twitter.png) no-repeat 0 0;
+}
+.topbarlinks li a.facebook
+{
+	width:40px;
+	height:40px;
+	display:block;
+	background:url(img/icons/facebook.png) no-repeat 0 0;
+}
+.topbarlinks li a.google
+{
+	width:40px;
+	height:40px;
+	display:block;
+	background:url(img/icons/google.png) no-repeat 0 0;
+}
+
+.topbarlinks li a:hover {
+	opacity:0.9;
+}
+
+/* Forms - select box styles with jquery */
+li.select-container 
+{
+	position:relative;
+	width:100%;
+	margin-bottom:1.25em;
+}
+li.select-container select.select
+{
+    position:relative;
+	float:left;
+    z-index:10;
+    width:240px !important;
+    height:40px !important;
+    line-height:40px;
+}
+li.select-container span.select
+{
+    position:absolute;
+    bottom:0;
+    float:left;
+    left:0;
+    width:200px;
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+	background:url(img/forms/select.png) no-repeat 0 0;
+    cursor:default;
+    z-index:1;
+	color:#6E5A51;
+	padding-left:42px;
+	font-size:0.8125em; /* 13px / 16px */
+}
+
+/* Main content area */
+#main
+{
+	background-image:none;
+	background-color:#fff;
+}
+#main h1
+{
+	clear:both;
+	display:inline-block;
+	color:#013a58;
+	font-size:26px;
+	margin:30px 0;
+	font-family: 'BreeLtLight';
+}
+
+#main .colone
+{
+	width:100%;
+}
+.container
+{
+	float:left;
+	width:100%;
+	background-color:#fff;
+}
+/* Slideshow */
+#image-container 
+{
+	display:none;
+}
+#slides {
+	clear:left;
+	display:inline-block;
+	width:100%;
+}
+
+/* Main navigation */
+nav.desktop
+{
+	display:none;
+}
+
+/* MOBILE MENU */
+.mobile-container
+{
+	float:left;
+	width:100%;
+	display:inline-block;
+	min-height:50px;
+	margin:15px 0;
+	position:relative;
+}
+.mobile-container a.toggle
+{
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:90%;
+	height:50px;
+	line-height:50px;
+	padding:0 5%;
+	color:#fff;
+	font-size:15px;
+	text-decoration:none;
+	background:#013A57 url(img/down.png) no-repeat 98% 50%;
+}
+.mobile-container nav.mobile a.toggle
+{
+	background:#013A57 url(img/up.png) no-repeat 98% 50%;
+}
+nav.mobile .holder 
+{
+	padding-top:52px;
+}
+nav.mobile .holder li
+{
+	margin-bottom:1px;
+}
+nav.mobile .holder li a
+{
+	display:inline-block;
+	width:90%;
+	height:50px;
+	line-height:50px;
+	background:#89A3B0;
+	color:#fff;
+	font-size:15px;
+	text-decoration:none;
+	padding:0 5%;
+}
+nav.mobile .holder li ul li
+{
+	margin-bottom:0;
+}
+nav.mobile .holder li ul li a
+{
+	height:25px;
+	line-height:25px;
+	width:80%;
+	padding:0 10%;
+}
+nav.mobile .holder li ul li ul li a
+{
+	width:70%;
+	padding:0 15%;
+}
+nav.mobile .holder li ul li:last-child a
+{
+	padding-bottom:5%;
+}
+/* NAVIGATION */
+#main nav.mobile
+{
+	display:none;
+}
+
+/* MOBILE SLIDESHOW */
+ul.gallery
+{
+	clear:both;
+	display:block;
+}
+ul.gallery li img
+{
+	display:none;
+}
+ul.gallery li:first-child img
+{
+	display:block;
+}
+
+/* HOME PAGE FEATURED TREATMENTS */
+#main .colone
+{
+	display:inline-block;
+	position:relative;
+	width:100%;
+	color:#013a58;
+	font-size:14px;
+	margin-bottom:45px;
+}
+#main .colone img
+{
+	width:100%;
+}
+#main .colone .ribbon
+{
+	display:block;
+	width: 95.238095238%; /* 320 (originally 336) / 336 */
+	height:4.0625em;
+	line-height:2.5em;
+	padding: 2.380952381% 3.273809524%;
+	/*padding:8px 11px;*/
+	color:#fff;
+	font-family: 'BreeRgBold';
+	font-size:18px;
+}
+#main .colone .ribbon.dentistry-services
+{
+	background:url(img/dentistry-services.png) no-repeat top left;
+}
+#main .colone .ribbon.lip-fillers
+{
+	background:url(img/lip-fillers.png) no-repeat top left;
+}
+#main .colone .ribbon.anti-wrinkle-treatment
+{
+	background:url(img/anti-wrinkle-treatment.png) no-repeat top left;
+}
+#main .colone .ribbon.dermal-fillers
+{
+	background:url(img/dermal-fillers.png) no-repeat top left;
+}
+#main .colone .ribbon.laser-tattoo-removal
+{
+	background:url(img/laser-tattoo-removal.png) no-repeat top left;
+}
+#main .colone .ribbon.chemical-skin-peel
+{
+	background:url(img/chemical-skin-peel.png) no-repeat top left;	
+}
+#main .colone .ribbon.laser-skin-resurfacing
+{
+	background:url(img/laser-skin-resurfacing.png) no-repeat top left;
+}
+#main .colone .ribbon.teeth-whitening
+{
+	background:url(img/teeth-whitening.png) no-repeat top left;	
+}
+
+#main .colone p
+{
+	margin:10px 0 16px 0;
+}
+#main .colone a
+{
+	text-decoration:none;
+}
+#main a.dentistry-services .colone span span,
+#main .colone a.dentistry-services
+{
+	color:#8b80a0;
+}
+#main a.lip-fillers .colone span span,
+#main .colone a.lip-fillers
+{
+	color:#bb94c6;
+}
+#main a.anti-wrinkle-treatment .colone span span,
+#main .colone a.anti-wrinkle-treatment
+{
+	color:#a3bb80;
+}
+#main a.dermal-fillers .colone span span,
+#main .colone a.dermal-fillers
+{
+	color:#8f7f68;
+}
+#main a.laser-tattoo-removal .colone span span,
+#main .colone a.laser-tattoo-removal
+{
+	color:#b18dc1;
+}
+#main a.chemical-skin-peel .colone span span,
+#main .colone a.chemical-skin-peel
+{
+	color:#a4bc80;
+}
+#main a.laser-skin-resurfacing .colone span span,
+#main .colone a.laser-skin-resurfacing
+{
+	color:#92816a;
+}
+#main a.teeth-whitening .colone span span,
+#main .colone a.teeth-whitening
+{
+	color:#8c81a0;
+}
+#main a:hover .colone span span,
+#main .colone a:hover
+{
+	text-decoration:underline;
+}
+
+/* HOME PAGE TREATMENT LIST */
+.treatmentlst
+{
+	width:100%;
+}
+.treatmentlst article
+{
+	float:left;
+	width:100%;
+	margin-bottom:24px;
+}
+.treatmentlst article h3
+{
+	font-size:16px;
+}
+.treatmentlst article p
+{
+	color:#003A57;
+	font-size:14px;
+}
+.treatmentlst article.dentistry-services h3
+.treatmentlst article.dentistry-services span
+{
+	color:#8b80a0;
+}
+.treatmentlst article.lip-fillers span
+{
+	color:#bb94c6;
+}
+.treatmentlst article.anti-wrinkle-treatment h3,
+.treatmentlst article.anti-wrinkle-treatment p span
+{
+	color:#a3bb80;
+}
+.treatmentlst article.dermal-fillers a
+{
+	color:#8f7f68;
+}
+.treatmentlst article.laser-tattoo-removal h3,
+.treatmentlst article.laser-tattoo-removal span
+{
+	color:#b18dc1;
+}
+.treatmentlst article.chemical-skin-peel h2,
+.treatmentlst article.chemical-skin-peel span
+{
+	color:#a4bc80;
+}
+.treatmentlst article.teeth-whitening h3,
+.treatmentlst article.teeth-whitening span
+{
+	color:#8c81a0;
+}
+
+
+/* SUB PAGES */
+#main section.one
+{
+	float:left;
+	width:100%;
+	padding:30px 0;
+	background-color:#a3bb80;
+}
+#main section.one h1
+{
+	margin:0;
+	font-size:40px;
+	color:#fff;
+}
+#main section.two
+{
+	float:left;
+	width:100%;
+	padding:2.1875em 0;
+	/*margin-bottom:34px;*/
+	background-color:#b9cddb;
+}
+#main section.two p
+{
+	color:#003a57;
+	font-size:25px;
+	font-family: 'BreeLtLight';
+}
+#main section.two span
+{
+	font-family: 'BreeRgBold';
+}
+#main section.two p br
+{
+	margin-bottom:10px;
+}
+#main aside
+{
+	float:right;
+	width:90%;
+	padding:5%;
+	margin-bottom:20px;
+	background:#e7e5eb;
+}
+#main aside h3
+{
+	color:#8a809f;
+	font-size:18px;
+	font-weight:bold;
+	padding:0 0 13px 6.04838709677419%;
+	border-bottom:1px solid #8a809f;
+}
+
+/* ABOUT AND BLOG STYLES */
+#main .sub-container section
+{
+	width:100%;
+	display:inline-block;
+	margin:34px 0 23px 0;
+}
+#main .sub-container section h2
+{
+	font-size:16px;
+	color:#8a809f;
+	margin-bottom:13px;
+}
+#main .sub-container section .imgcontainer
+{
+	float:left;
+	width:17.68421052631579%; /* 168 / 950  */
+	margin-right:23px;
+	background:url(img/about-arrow.png) no-repeat center right;
+}
+#main .sub-container section .desc
+{
+	float:left;
+	width: 100%;
+	display:block;
+	margin-top:20px;
+}
+#main .sub-container section .desc h2,
+#main .sub-container section .desc h2 a
+{
+	color:#a3bb80;
+	padding-bottom:15px;
+	font-weight:bold;
+	margin-bottom:20px;
+	border-bottom:1px solid #a3bb80;
+}
+#main .sub-container section .desc h2 a
+{
+	border-bottom:none;
+}
+#main .sub-container section .desc h2 a:hover
+{
+	text-decoration:none;
+}
+#main .sub-container section .desc h2 span
+{
+	font-size:12px;
+	color:#003a57;
+	margin-left:20px;
+}
+#main .sub-container section .desc p,
+#main .sub-container section p
+{
+	font-size:14px;
+	margin-bottom:20px;
+}
+.single #main .sub-container section
+{
+	width:98%;
+}
+#main .sub-container section .alignright,
+#main .page-container .alignright
+{
+	float:right;
+	margin:0 0 20px 20px;
+}
+#main .sub-container section .alignleft,
+#main .page-container .alignleft
+{
+	float:left;
+	margin:0 20px 20px 0;
+}
+#main .sub-container section .alignleft,
+#main .page-container .alignleft
+{
+	float:left;
+	margin:0 20px 20px 0;
+}
+#main .cat-links
+{
+	clear:left;
+	width:66.7621776504298%; /* 466 / 698 */
+	display:inline-block;
+	margin:10px 0;
+	font-size:14px;
+}
+#main .cat-links a
+{
+	color:#a3bb80;
+}
+
+/* BREADCRUMBS */
+#main ul.breadcrumbs
+{
+	display:inline-block;
+	width:100%;
+	margin:0;
+	list-style-type:none;
+}
+	#main ul.breadcrumbs li
+	{
+		float:left;
+		margin-bottom:0;
+	}
+
+/* BLOG */
+.page-blog #main .sub-container section .desc p a
+{
+	color:#a3bb80;
+}
+.page-blog #main aside,
+.category #main aside,
+.single-post #main aside
+{
+	background:#dce5cf;
+}
+.page-blog #main aside h3,
+.category #main aside h3,
+.single-post #main aside h3
+{
+	color:#a3bb80;
+	border-bottom:1px solid #a3bb80;
+}
+.page-blog #main aside,
+.category #main aside,
+.single .faux.blog #main aside
+{
+	background:#dce5cf;
+}
+
+/* SPECIAL OFFERS */
+.page-special-offers .sub-container section .desc p a
+{
+	color:#a3bb80;
+}
+.page-special-offers #main aside
+{
+	background:#dce5cf;	
+}
+.page-special-offers #main aside h3
+{
+	color:#a3bb80;
+	border-bottom:1px solid #a3bb80;
+}
+
+
+/* ABOUT US */
+.page-about-us #main section.one
+{
+	background-color:#a3bb80;
+}
+.page-about-us #main aside
+{
+	width:100%;
+	padding:0;
+	margin-top:34px;
+	background:none;
+}
+.page-about-us #main aside a.colone
+{
+	margin-bottom:24px;
+}
+.page-about-us #main aside a.colone:hover
+{
+	text-decoration:none;
+}
+.page-about-us #main aside a.colone .ribbon
+{
+	width: 91.020408163%; /* 223 (originally 245) / 245 */
+	height:40px;
+	line-height:40px; 
+	padding:0 4.489795918%;
+	text-decoration:none;
+	background-color:#8b80a0;
+	background-image:none;
+}
+.page-about-us #main aside a.colone .ribbon.dentistry-services
+{
+	background-color:#8b80a0;
+}
+.page-about-us #main aside a.colone .ribbon.lip-fillers
+{
+	background-color:#bb94c6;
+}
+.page-about-us #main aside a.colone .ribbon.anti-wrinkle-treatment
+{
+	background-color:#a3bb80;
+}
+.page-about-us #main aside a.colone .ribbon.dermal-fillers
+{
+	background-color:#8f7f68;
+}
+.page-about-us #main aside a.colone .ribbon.laser-tattoo-removal
+{
+	background-color:#b18dc1;
+}
+.page-about-us #main aside a.colone .ribbon.chemical-skin-peel
+{
+	background-color:#a4bc80;
+}
+.page-about-us #main aside a.colone .ribbon.laser-skin-resurfacing
+{
+	background-color:#92816a;
+}
+.page-about-us #main aside a.colone .ribbon.teeth-whitening
+{
+	background-color:#8c81a0;
+}
+
+/* TREATMENTS  */
+.page-treatments #main section.one
+{
+	background-color:#8a809f;
+}
+.page-treatments #main section.two
+{
+	margin-bottom:34px;
+}
+.page-treatments article
+{
+	float:left;
+	width:100%;
+	margin-bottom:34px;
+}
+.page-treatments article h2
+{
+	color:#8a809f;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.page-treatments article span.subinfo
+{
+	color:#8a809f;
+	font-size:14px;
+	display:block;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.page-treatments article p
+{
+	font-size:14px;
+}
+.page-treatments article p span
+{
+	font-weight:bold;
+}
+.page-treatments article p span.more
+{
+	font-weight:normal;
+}
+.page-treatments article a
+{
+	color:#8a809f;
+}
+.page-treatments article img
+{
+	margin-bottom:14px;
+}
+.page-treatments article a:hover,
+.page-treatments article a:hover p
+{
+	text-decoration:none;
+}
+.page-treatments article a:hover span.more
+{
+	text-decoration:underline;
+}
+
+
+/* TREATMENTS SUB PAGES */
+.page-template-treatment-php #main section.one,
+.page-child #main section.one
+{
+	background:#8a809f;
+}
+.page-template-treatment-php .page-container,
+.page-child .page-container
+{
+	float:left;
+	width:100%;
+	display:block;
+	margin:34px 0 0 0;
+	padding-bottom:23px;
+}
+.page-template-treatment-php #main h1,
+.page-child #main h1
+{
+	margin:0 0 13px 0;
+}
+.page-template-treatment-php .page-container h2,
+.page-child .page-container h2
+{
+	font-size:16px;
+	color:#8a809f;
+	margin-bottom:13px;
+}
+.page-template-treatment-php .page-container p,
+.page-child .page-container p
+{
+	font-size:14px;
+	margin-bottom:20px;
+}
+.page-template-treatment-php .page-container img,
+.page-child .page-container img
+{
+	float:right;
+	margin:0 0 0 35px;
+}
+.wp-caption
+ {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding:8px 18px 0px 8px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.wp-caption img {
+   margin: 0 auto!important;
+   padding: 0!important;
+   border: 0 none!important;
+}
+.wp-caption p.wp-caption-text 
+{
+	font-size: 12px;
+	display:inline-block;
+	width:100%;
+	line-height: 25px;
+	padding:0px;
+	margin: 0;
+}
+.page-template-treatment-php .page-container ul,
+.page-child .page-container ul
+{
+	list-style-type:disc;
+	margin-left:15px;
+	margin-bottom:20px;
+}
+.page-template-treatment-php .page-container ul li,
+.page-child .page-container ul li
+{
+	font-size:14px;
+	margin-bottom:5px;
+}
+
+.page-template-treatment-php .infobox p,
+.page-child .infobox p
+{
+	font-size:41px;
+}
+.page-template-treatment-php div.tside,
+.page-child div.tside
+{
+	float:left;
+	width:90%;
+	height:auto;
+	margin-bottom:15px;
+	padding:23px 5%;
+	background:#e7e5eb;
+}
+.page-template-treatment-php div.tside h3,
+.page-child div.tside h3
+{
+	width:87.903225806%;
+	color:#8a809f;
+	padding:0 0 13px 6.04838709677419%;
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px solid #8a809f;
+}
+ul.sidelnks
+{
+	margin:15px 0 0 3.04838709677419%;
+}
+ul.sidelnks li
+{
+	margin-bottom:10px;
+}
+ul.sidelnks li a
+{
+	color:#003a57;
+	font-size:14px;
+}
+
+/* PRICE LIST */
+.page-price-list #main section.two
+{
+	margin-bottom:34px;
+}
+.page-price-list .table-container
+{
+	display:inline-block;
+	width:94.31578947368422%;
+	padding:27px 2.84210526315789%;
+	background:#E6ECF2;
+	margin:24px 0 10px 0;
+}
+.page-price-list h2
+{
+	font-size:27px;
+	text-decoration:underline;
+	font-family: 'BreeRgBold';
+	margin-top:24px;
+}
+.page-price-list p.infotxt
+{
+	font-size:18px;
+}
+.page-price-list .table-container table tr
+{
+	width:100%;	
+}
+.page-price-list .table-container table td
+{
+	font-size:16px;
+	padding:4px 0;
+	border-bottom:1px solid #85A9C0;
+}
+.page-price-list .table-container table td.one
+{
+	width:314px;
+}
+.page-price-list .table-container table td.two
+{
+	width:314px;
+}
+.page-price-list .table-container table td.three
+{
+	width:268px;
+	font-weight:bold;
+}
+.page-price-list .infocontainer
+{
+	display:inline-block;
+	width:100%;
+	position:relative;
+}
+.page-price-list .infocontainer .scroll-for-prices
+{
+	position:absolute;
+	top:0;
+	right:0;
+	width:260px;
+	height:65px;
+	background:url(img/scroll-for-prices.png) no-repeat top left;
+}
+.page-price-list p.catdesc
+{
+	font-size:14px;
+	margin-bottom:24px;
+	content:
+}
+.page-price-list p.catdesc:before
+{
+	content: "Note: ";
+	font-weight:bold;
+}
+
+/* FAQS */
+.post-type-archive-faqs #main section.one,
+.tax-faqscategory #main section.one
+{
+	background-color:#8a809f;
+}
+.post-type-archive-faqs #main .sub-container section h1
+{
+	float:left;
+	font-size:24px;
+	font-weight:bold;
+	margin:24px 0 10px 0;
+}
+.post-type-archive-faqs #main .sub-container section h1.first
+{
+	margin-top:0;
+}
+.post-type-archive-faqs #main .sub-container section .desc,
+.tax-faqscategory #main .sub-container section .desc
+{
+	width:95%;
+}
+.post-type-archive-faqs #main .sub-container section .desc h2,
+.tax-faqscategory #main .sub-container section .desc h2
+{
+	color:#8a809f;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:1px solid #8a809f;
+}
+#main .sub-container ul
+{
+	list-style-type:disc;
+	margin-left:15px;
+	margin-bottom:20px;
+}
+#main .sub-container ul li
+{
+	font-size:14px;
+	margin-bottom:5px;
+}
+
+/* TESTIMONIALS */
+.page-testimonials #main section.one
+{
+	background-color:#8f7f68;
+}
+.page-testimonials #main section.two
+{
+	margin-bottom:34px;
+}
+.t-container
+{
+	float:left;
+	width:100%;
+}
+article.t1
+{
+	float:left;
+	position:relative;
+	width: 96.858638743%; /* 925 (originally 955) / 955 */ 
+	padding:1.125em 1.570680628% 1.875em 1.570680628%;
+	background:url(img/testimonial-bg.jpg) repeat-x top left;
+	margin-bottom:33px;
+}
+article.t1 p
+{
+	color:#003a57;
+	font-size:14px;
+	padding-bottom:-1.125em !important;
+	line-height:20px;
+}
+article.t1 span
+{
+	position:absolute;
+	bottom:0;
+	/*bottom:-1.125em;*/
+	left:0;
+	width:100%;
+	color:#8f7f68;
+	padding-top:0.9375em;
+	/*padding-top:0.9375em;*/
+	font-size:14px;
+	font-weight:bold;
+	background:url(img/testimonial-hbg.png) no-repeat top left;
+}
+.page-testimonials #main aside
+{
+	background-color:#d7cfc4;
+}
+.page-testimonials #main aside h3
+{
+	padding-left:0;
+	color:#8f7f68;
+	border-bottom:1px solid #8f7f68;
+}
+.page-testimonials #main aside input,
+.page-testimonials #main aside textarea
+{
+	width:90%;
+	height:30px;
+	padding:0 5%;
+	font-size:13px;
+	color:#003a57;
+	margin-bottom:10px;
+	border:1px solid #a79a8a;
+}
+.page-testimonials #main aside textarea
+{
+	height:100px;
+	padding:5%
+}
+.page-testimonials #main aside a.btn
+{
+	width:100%;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	display:block;
+	cursor:pointer;
+	background-color:#a79a8a;
+	border:1px solid #d7cfc4;
+}
+.page-testimonials #main aside a.btn:hover
+{
+	color:#d7cfc4;
+	text-decoration:none;
+}
+
+/* GALLERY */
+.post-type-archive-gallery #main section.one
+{
+	background-color:#bb94c6;
+}
+.post-type-archive-gallery #main section.two
+{
+	margin-bottom:34px;
+}
+ul.galleries
+{
+	float:left;
+	list-style:none;
+	margin:0 30px 90px 20px;
+	padding-left:0;
+}
+ul.galleries.last
+{
+	margin-right:0;
+}
+ul.galleries:nth-child(3n+3)
+{
+	margin-right:0;
+}
+ul.galleries li
+{
+	display:none;
+	position:relative;
+	width:293px;
+	height:210px;
+	background:url(img/gallery/frame.png) no-repeat top left;
+}
+ul.galleries li img
+{
+	position:absolute;
+	top:17px;
+	left:14px;
+	transform: rotate(-2deg);
+   -moz-transform: rotate(-2deg);
+   -webkit-transform: rotate(-2deg);
+}
+ul.galleries li a span
+{
+	position:absolute;
+	bottom:-30px;
+	left:0px;
+	width:100%;
+	color:#003a57;
+	text-align:center;
+	display:block;
+	margin-top:25px;
+	font-size:14px;
+	text-transform:uppercase;
+}
+ul.galleries li a:hover
+{
+	text-decoration:none;
+}
+ul.galleries li a p
+{
+	position:absolute;
+	bottom:-53px;
+	left:0px;
+	width:100%;
+	color:#bb94c6;
+	text-align:center;
+	display:block;
+	margin-top:25px;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+ul.galleries li:first-child
+{
+	display:block;
+}
+ul.galleries li a:hover p
+{
+	text-decoration:underline;
+}
+
+/* LIGHTBOX STYLES */
+.pp_social .twitter
+{
+	font-size:10px;
+}
+
+/* A TO Z */
+.post-type-archive-atoz #main section.one,
+.single-atoz #main section.one,
+.tax-azcategory #main section.one
+{
+	background-color:#bb94c6;
+}
+.post-type-archive-atoz #main section.two
+{
+	margin-bottom:34px;
+}
+
+.post-type-archive-atoz .cat-container
+{
+	float:left;
+	width:100%;
+	margin-right:0px;
+}
+
+.post-type-archive-atoz h2,
+.tax-azcategory h2
+{
+	font-weight:bold;
+	display:block;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.post-type-archive-atoz ul.sitemap
+{
+	float:left;
+	margin-bottom:20px;
+}
+.tax-azcategory ul.sitemap
+{
+	margin-top:24px;
+}
+.single-atoz #main .sub-container section
+{
+	width:98%;
+}
+
+.post-type-archive-atoz ul.sitemap li a,
+.tax-azcategory ul.sitemap li a
+{
+	color:#bb94c6;
+	display:block;
+	font-size:14px;
+	margin-bottom:5px;
+}
+.tax-azcategory ul.sitemap li a
+{
+	clear:left;
+}
+.tax-azcategory #main .sub-container section .desc h2
+{
+	color:#bb94c6;
+	border-bottom:1px solid #bb94c6; 
+}
+.tax-azcategory #main .sub-container ul
+{
+	margin-left:0;
+	list-style-type:none;
+}
+
+
+.page-price-list #main section.one
+{
+	background:#85a9c0;
+}
+
+/* CONTACT US */
+.page-contact #main .bubble 
+{
+	display:none;
+}
+.page-contact #main section.one
+{
+	background:#85a9c0;
+}
+.page-contact #main section.two
+{
+	margin-bottom:34px;
+}
+.page-contact #main section.two p
+{
+	width:717px;
+}
+
+.page-contact .infobox p
+{
+	font-size:37px;
+}
+.page-contact p.contact
+{
+	font-size:25px;
+	display:inline-block;
+	font-family: 'BreeLtLight';
+}
+.page-contact p.contact a
+{
+	color:#003a57;
+	font-weight:bold;
+}
+.page-contact .column
+{
+	float:left;
+	width:100%;
+	margin:26px 0 34px 0;
+}
+.page-contact .column .lineup {
+	display:inline-block;
+	width:100%;
+	height:200px;
+}
+.page-contact .column h3
+{
+	color:#85a9c0;
+	margin-bottom:13px;
+	font-size:24px;
+	font-weight:bold;
+	font-family: 'BreeRgRegular';
+	text-decoration:underline;
+}
+.page-contact .column address
+{
+	font-style:normal;
+	font-size:13px;
+}
+.page-contact .column p
+{
+	font-size:13px;
+}
+.page-contact .column a
+{
+	color:#003a57;
+	margin-top:20px;
+	display:inline-block;
+	text-decoration:underline;
+}
+.page-contact .column a.tel,
+.page-contact .column a.tel:hover
+{
+	cursor:text;
+	color:#003a57;
+	display:inline-block;
+	margin:20px 0;
+	font-weight:bold;
+	text-decoration:none;
+}
+.page-contact .column.last a.tel
+{
+	margin-top:37px;
+}
+
+.infobox
+{
+	width: 94.105263158%; /* 894 (originally 950) / 950 */ 
+	display:inline-block;
+	margin-bottom:23px;
+	padding:9px 2.947368421%;
+	background:#b9cddb;	
+}
+.infobox p
+{
+	font-family: 'JournalRegular';
+	font-size:43px;
+}
+.infobox p a
+{
+	color:#003a57;
+	text-decoration:underline;
+}
+.infobox p a:hover
+{
+	color:#36647b;
+}
+
+/* TREATMENT BLOCK HOME */
+.info
+{
+	width:100%;
+	/*height:100px;*/
+	display:inline-block;
+	margin-bottom:20px;
+}
+.info h3 a
+{
+	float:left;
+	width:96.8421052631579%;
+	padding:0.9375em 1.57894736842105%;
+	color:#fff;
+	vertical-align:middle;
+	font-size:16px;
+	background:#013a57;
+	font-family: 'BreeRgOblique';
+}
+.info h3 a:hover
+{
+	text-decoration:none;
+}
+.info ul
+{
+	width:100%;
+	margin:10px 0 0 0;
+}
+.info ul li
+{
+	width:96.8421052631579%;
+	display:inline-block;
+	padding:0.625em 1.57894736842105%;
+	background:#bacddb;
+	border-top:1px solid #fff;
+}
+.info ul li a
+{
+	color:#013a57;
+}
+
+/* FOOTER */
+footer
+{
+	float:left;
+	width:100%;
+	padding:20px 0;
+	color:#013a57;
+	font-size:14px;
+	display:inline-block;
+}
+footer ul
+{
+	float:left;
+	margin-bottom:10px;
+}
+footer ul li
+{
+	float:left;
+	
+}
+footer ul li a,
+footer ul li a:visited
+{
+	color:#013a57;
+	padding:0 13px;
+	border-left:1px solid #013a57;
+	margin-left:10px;
+	
+}
+footer ul li a:hover
+{
+	text-decoration:underline;
+}
+footer p
+{
+	float:right;
+	line-height:25px;
+}
+footer p span
+{
+	font-weight:bold;
+}
+footer p span a
+{
+	cursor:default;
+}
+footer p span a:hover
+{
+	text-decoration:none;
+}
+footer ul li a
+{
+	color:#013a57;
+	font-weight:bold;
+}
+footer ul li a:hover
+{
+	color:#013a57;
+	text-decoration:underline;
+}
+
+
+/* Styles for desktop and large screen ----------- */
+
+@media only screen and (min-width: 400px) {
+	.strapline
+	{
+		margin:32px 0 1.5em 2.0942408376963350785340314136126%; /* 32px / 0 /  40px / 20px */
+	}
+	.topbarlinks
+	{
+		margin-top:0;
+	}
+	li.select-container 
+	{
+		width:240px;
+		margin-bottom:0;
+	}
+	
+	/* MAIN CONTENT */
+	
+	#main .colone
+	{
+		float:left;
+		width:100%;
+	}
+	.home #main .colone
+	{
+		float:left;
+		width:22.94736842105263%; /* 218 / 950 */
+	}
+	#main .colone:nth-child(2n+2)
+	{
+		clear:left;
+		float:left;
+	}
+	.alpha
+	{
+		margin-right:2.73684210526316%; /* 26 / 950 */
+	}
+	#main .sub-container
+	{
+		float:left;
+		width: 73.507853403%; /* 702 (originally 702) / 955 */ 	
+	}
+	#main .sub-container section .imgcontainer
+	{
+	/*	width:23.93162393162393%;*/
+	}
+	#main .sub-container section .desc
+	{
+		float:left;
+		width: 66.79202279202279%;
+		margin-top:0;
+	}
+	#main aside
+	{
+		width:22.94736842105263%; /* 228px */
+		padding:35px 1.57894736842105%;
+	}
+	
+	/* ABOUT SIDEBAR */
+	.page-about-us #main aside
+	{
+		width:26%;   /* 247px */ 
+	}
+	
+	/* FEATURED TREATMENTS */
+	#main .colone .ribbon
+	{
+		width:89.90825688073394%; /* 196 / 218 */
+		height:34px;
+		line-height:20px;
+		display:block;
+		font-size:14px;
+		padding:9px 5.04587155963303% 7px 5.04587155963303%; /* 11 / 218 */
+	}
+	#main .colone .ribbon.one
+	{
+		background:url(img/dentistry-services.jpg) no-repeat top center;
+	}
+	#main .colone .ribbon.dentistry-services
+	{
+		background:url(img/dentistry-services.jpg) no-repeat top center;
+	}
+	#main .colone .ribbon.lip-fillers
+	{
+		background:url(img/lip-fillers-ribbon.jpg) no-repeat top center;
+	}
+	#main .colone .ribbon.anti-wrinkle-treatment
+	{
+		background:url(img/anti-wrinkle-treatment-ribbon.jpg) no-repeat top center;
+	}
+	#main .colone .ribbon.dermal-fillers
+	{
+		background:url(img/dermal-fillers-ribbon.jpg) no-repeat top center;
+	}
+	#main .colone .ribbon.laser-tattoo-removal
+	{
+		background:url(img/laser-tattoo-removal-ribbon.png) no-repeat top center;
+	}
+	#main .colone .ribbon.chemical-skin-peel
+	{
+		background:url(img/chemical-skin-peel-ribbon.png) no-repeat top center;	
+	}
+	#main .colone .ribbon.laser-skin-resurfacing
+	{
+		background:url(img/laser-skin-resurfacing-ribbon.png) no-repeat top center;
+	}
+	#main .colone .ribbon.teeth-whitening
+	{
+		background:url(img/teeth-whitening-ribbon.png) no-repeat top center;	
+	}
+	#main .colone.treatment4
+	{
+		margin-right:0
+	}
+	
+	/* GALLERY */
+	ul.galleries
+	{
+		margin:0 20px 90px 0px;
+	}
+	ul.galleries:nth-child(2n+2)
+	{
+		margin-right:0;
+	}
+	ul.galleries:nth-child(3n+3)
+	{
+		margin-right:20px;
+	}
+	
+	.post-type-archive-atoz .cat-container
+	{
+		float:left;
+		width:33.33333333333333%; /* 255 / 950 */
+		margin-right:0px;
+	}
+	.post-type-archive-atoz .cat-container:nth-of-type(even),
+	.post-type-archive-atoz .cat-container.last
+	{
+		margin-right:0;
+	}
+	.post-type-archive-atoz .cat-container:nth-of-type(3n) {
+		clear:left;
+		float:left;
+		margin-right:0;
+	}
+
+	
+	/* CONTACT */
+	.page-contact #main .bubble 
+	{
+		position:absolute;
+		right:0;
+		top:-55px;
+		width:201px;
+		height:199px;
+		display:block;
+		background:url(img/contact-bubble.png) no-repeat top left;
+	}
+	.page-contact .column
+	{
+		float:left;
+		width:29.68421052631579%;
+		margin:26px 5.47368421052632% 34px 0;
+	}
+	.page-contact .column:nth-child(4n+4)
+	{
+		margin-right:0;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.topbarlinks
+	{
+		clear:left;
+	}
+	/* Main navigation */
+	.mobile-container
+	{
+		display:none;
+	}
+	nav.desktop
+	{
+		display:block;
+	}
+	nav.desktop ul {
+		position:relative;
+	}
+	nav.desktop ul li 
+	{
+		float: left; 
+		margin-right:12px;
+	}
+	nav.desktop ul li.levelone.col10
+	{
+		margin-right:0;
+	}
+	nav.desktop ul li a 
+	{
+		display: block;
+		color:#023a5b;
+		font-size:16px;
+		padding:10px 0;
+		white-space: nowrap;
+		border-bottom: 3px solid #fff; 
+	}
+	nav.desktop ul li a:hover,
+	nav.desktop ul li.current_page_item a
+	{
+		color:#8a809f;
+		/*color:#ba94c7;*/
+		text-decoration:none;
+		border-bottom:3px solid #8a809f;
+	}
+	
+	/* PAGE SPECIFIC HOVER STATES */
+	nav.desktop ul li.col1 a:hover, /* About */
+	nav.desktop ul li.col1.current_page_item a
+	{
+		color:#a3bb80;
+		border-bottom:3px solid #a3bb80;
+	}
+	nav.desktop ul li.col2 a:hover, /* Treatments */
+	nav.desktop ul li.col2.current_page_item a,
+	nav.desktop ul li.col2.current_page_parent a
+	{
+		color:#8a809f;
+		border-bottom:3px solid #8a809f;
+	}
+	
+	nav.desktop ul li.col3 a:hover, /* Price List */
+	nav.desktop ul li.col3.current_page_item a
+	{
+		color:#85a9c0;
+		border-bottom:3px solid #85a9c0;
+	}
+	nav.desktop ul li.col4 a:hover, /* Gallery */
+	nav.desktop ul li.col4.current_page_item a
+	{
+		color:#bb94c6;
+		border-bottom:3px solid #bb94c6;
+	}
+	nav.desktop ul li.col5 a:hover, /* Testimonials */
+	nav.desktop ul li.col5.current_page_item a
+	{
+		color:#8f7f68;
+		border-bottom:3px solid #8f7f68;
+	}
+	nav.desktop ul li.col6 a:hover, /* Special Offers */
+	nav.desktop ul li.col6.current_page_item a
+	{
+		color:#a3bb80;
+		border-bottom:3px solid #a3bb80;
+	}
+	.page-special-offers .faux 
+	{
+		background:url(img/blog-faux.jpg) repeat-y top right;
+	}
+	nav.desktop ul li.col7 a:hover, /* FAQ */
+	nav.desktop ul li.col7.current_page_item a,
+	.post-type-archive-faqs nav.desktop ul li.menu-item-455 a,
+	.tax-faqscategory nav.desktop ul li.menu-item-455 a
+	{
+		color:#8a809f;
+		border-bottom:3px solid #8a809f;
+	}
+	nav.desktop ul li.col8 a:hover, /* AtoZ */
+	nav.desktop ul li.col8.current_page_item a,
+	.post-type-archive-atoz nav.desktop ul li.menu-item-456 a,
+	.single-atoz nav.desktop ul li.menu-item-456 a,
+	.tax-azcategory nav.desktop ul li.menu-item-456 a
+	{
+		color:#bb94c6;
+		border-bottom:3px solid #bb94c6;
+	}
+	nav.desktop ul li.col9 a:hover, /* Blog */
+	nav.desktop ul li.col9.current_page_item a
+	{
+		color:#a3bb80;
+		border-bottom:3px solid #a3bb80;
+	}
+	nav.desktop ul li.col10 a:hover, /* Contact */
+	nav.desktop ul li.col10.current_page_item a
+	{
+		color:#85a9c0;
+		border-bottom:3px solid #85a9c0;
+	}
+	nav.desktop ul li ul 
+	{
+		display: none;
+		background-color: #fff;
+	}
+	
+	nav.desktop ul li:hover ul 
+	{
+		display: block;
+		position: absolute;
+		z-index:5000;
+		border-bottom:3px solid #8a809f;
+	}
+	nav.desktop ul li:hover li 
+	{
+		float: none;
+	}
+	nav.desktop ul li:hover li a,
+	nav.desktop ul li.current_page_item li a,
+	nav.desktop ul li.col2:hover li a,
+	nav.desktop ul li.col2.current_page_item li a
+	{	
+		background-color: rgba(255, 255, 255, 0.5);
+		font-size:15px;
+		color:#023a5b;
+		padding:8px 15px;
+		border-bottom:none;
+	}
+	nav.desktop ul li.col2.current_page_item li a:hover
+	{
+		color:#8a809f;
+	}
+	nav.desktop ul li li a:hover,
+	nav.desktop ul li.current_page_item li a:hover
+	{
+		color:#ba94c7;
+		border-bottom:none;
+		text-decoration:underline;
+	}
+	
+	nav.desktop ul li.current_page_item:hover li a {
+		border-bottom:none;
+	}
+	nav.desktop ul li:hover li:hover a {
+		border-bottom:none;
+	}
+	
+	/* FEATURED TREATMENTS */
+	#main .colone:nth-child(2n+2)
+	{
+		clear:none;
+	}
+	
+	/* TESTIMONIALS */
+	p.tleft
+	{
+		float:left;
+		display:inline-block;
+		width:48%;
+		margin:0 2% 22px 0;
+		font-size:14px;
+	}
+	p.tright
+	{
+		float:left;
+		width:48%;
+		display:inline-block;
+		margin:0 0 22px 2%;
+		font-size:14px;
+	}
+	.t-container
+	{
+		float:left;
+		width:71.57894736842105%; /* 680 / 950 */
+	}
+	article.t1
+	{
+		width:44.12698412698413%; /* 278 / 630 */
+		
+		margin:0 13px 20px 0;
+	}
+	article.t1 p
+	{
+		padding-bottom:15px;
+	}
+	.page-testimonials #main aside
+	{
+		/*width:29.26315789473684%;  278 / 950 */
+	}
+	.page-testimonials #main aside p
+	{
+		font-size:14px;
+		margin:10px 0;
+	}
+	
+	
+	/* TREATMENTS SUB PAGES */
+	.faux
+	{
+		float:left;
+		width:100%;
+	}
+	.page-template-treatment-php .page-container,
+	.page-child .page-container
+	{
+		float:left;
+		width:70.31578947368421%; /* 668px */
+		margin:34px 3.57894736842105% 0 0;
+	}
+	.page-template-treatment-php .page-container img,
+	.page-child .page-container img
+	{
+		float:right;
+		margin:0 0 3.68421052631579% 35px;
+	}
+	.page-template-treatment-php div.tside,
+	.page-child div.tside
+	{
+		width:22.94736842105263%; /* 228px */
+		padding:35px 1.57894736842105%;
+	}
+
+	/* GALLERY */
+	ul.galleries
+	{
+		margin:0 35px 90px 0;
+	}
+	ul.galleries:nth-child(2n+2)
+	{
+		margin-right:35px;
+	}
+	ul.galleries:nth-child(3n+3),
+	ul.galleries.last
+	{
+		margin-right:0;
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+{
+
+	.strapline
+	{
+		clear:left;
+		float:left;
+		margin:0 0 20px 0;
+	}
+	.topbarlinks
+	{
+		position:absolute;
+		top:67px;
+		right:1.5%;
+	}
+	
+	nav.desktop ul li 
+	{
+		float: left; 
+		margin-right:13px;
+	}
+	
+	#main .colone .ribbon
+	{
+		width:90.90825688073394%; /* 196 / 218 */
+
+	}
+	
+	/* TESTIMONIALS */
+	.page-treatments article
+	{
+		width:30.31578947368421%; /* 288 / 950 */
+		margin:0 4.42105263157895% 34px 0; /* 42 / 950 */
+	}
+	.page-treatments article h2 {
+		height:60px;
+	}
+	.page-treatments article:nth-of-type(3n)
+	{
+		margin-right:0;
+	}
+	
+	.page-contact #main .bubble 
+	{
+		display:none;
+	}
+}
+
+
+/*styles for 800px and up!*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape),
+ all and (min-width: 800px) {
+	
+	.topbar
+	{
+		width:96.8586387434555%; /* 926px / 955px */
+	}
+	.topbarlinks
+	{
+		clear:none;
+		float:right;
+		height:118px;
+	}
+	.topbar span a
+	{
+		cursor:text;
+	}
+	.logo
+	{
+		margin:2.5em 0; /* 40px / 16px  */
+	}
+	.strapline
+	{
+		margin:3.4375em 0 2.5em 2.0942408376963350785340314136126%; /* 55px / 0 /  40px / 20px */
+	}
+	li.select-container 
+	{
+		width:240px;
+		margin-bottom:0;
+	}
+	.topbarlinks li.referfriend
+	{
+		position:absolute;
+		top:46px;
+		right:0;
+		display:block;
+		width:162px;
+		height:51px;
+		background:url(img/global/refer-a-friend-today.png) no-repeat 0 0;
+	}
+	
+
+	.topbarlinks li.findabranch
+	{
+		position:absolute;
+		top:46px;
+		right:193px;
+		display:block;
+		width:194px;
+		height:57px;
+		background:url(img/global/find-a-branch.png) no-repeat 0 0;
+	}
+	
+	/* Main nav */
+	nav.desktop
+	{
+		width:100%;
+		position:relative;
+		left:1px;
+
+	}
+	nav.desktop ul li.col9
+	{
+		margin-right:2.42105263157895%; /* 23 / 950 */	
+	}
+	nav.desktop ul li a 
+	{
+		font-size:19px;
+	}
+	/* Slideshow */
+	#image-container 
+	{
+		clear: both;
+		display: inline-block;
+		float: left;
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		z-index:1;
+	}
+	#image-container img 
+	{
+		float:left;
+		display:inline;
+		position:relative;
+		z-index:5;
+		
+	}
+	
+	#image-slider 
+	{
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	#button-holder 
+	{
+		width:950px;
+		height:300px;
+		margin:0 auto;
+		position:relative;
+		z-index:10;
+	}
+	
+	a.move-left 
+	{
+		position:absolute;
+		left: 28px;
+		bottom:30px;
+		margin-top:-16px;
+		background-image:url(img/slideshow/left-arrow.png);
+		width:27px;
+		height:40px;
+		text-indent:-9999px;
+	}
+	
+	a.move-right 
+	{
+		position:absolute;
+		left:68px;
+		bottom:30px;
+		margin-top:-16px;
+		background-image:url(img/slideshow/right-arrow.png);
+		width:27px;
+		height:40px;
+		text-indent:-9999px;
+	}
+	#left-overlay 
+	{
+		position:absolute;
+		top:0;
+		left:0;
+		width:300px;
+		height:300px;
+		background-color:#000000;
+		z-index:10;
+	}
+	
+	#right-overlay 
+	{
+		position:absolute;
+		top:0;
+		right:0;
+		width:300px;
+		height:300px;
+		background-color:#000000;
+		z-index:10;
+	}
+
+	
+	/* TREATMENT BLOCK HOME */
+	#main .colone .ribbon
+	{
+		font-size:18px;
+	}
+	.info
+	{
+		width:100%;
+		height:auto;
+		margin-bottom:30px;
+		background:url(img/treatments-bg.gif) repeat-y top left;
+	}
+	.info h3 a
+	{
+		width:176px;
+		line-height:25px;
+	}
+	.info h3 a:hover
+	{
+		text-decoration:none;
+	}
+	.info ul
+	{
+		float:left;
+		width:724px;
+		height:auto;
+		vertical-align:middle;
+		margin:0;
+		padding:10px 0 10px 20px;
+		background:#bacddb;
+	}
+	.info ul li
+	{
+		float:left;
+		width:auto;
+		padding:5px 0;
+		border-top:none;
+	}
+	.info ul li a
+	{
+		color:#013a57;
+		padding:0 12px;
+		font-size:14px;
+		border-right:1px solid #fff;
+		border-left:1px solid #fff;
+	}
+	
+	footer ul
+	{
+		margin-bottom:0;
+	}
+	footer p
+	{
+		line-height:20px;
+	}
+	
+	ul.sidelnks
+	{
+		margin:15px 0 0 6.04838709677419%;
+	}
+	
+	/* BLOG */
+	.page-blog .faux,
+	.faux.blog
+	{
+		background:url(img/blog-faux.jpg) repeat-y top right;
+	}
+	
+	/* CONTACT */
+	.page-contact .bubble-container
+	{
+		position:relative;
+		display:block;
+		width:100%;
+	}
+	.page-contact #main .bubble 
+	{
+		display:block;
+	}
+	
+	/* TESTIMONIALS */
+	.page-treatments article
+	{
+		width: 275px; 
+		margin:0 62px 34px 0;
+	}
+	.page-treatments article:nth-child(even)
+	{
+		margin-right:0;
+	}
+	.page-treatments article:nth-child(odd)
+	{
+		clear:left;
+	}
+	
+	
+		/* ATOZ */
+	.post-type-archive-atoz .cat-container:nth-child(2n+2)
+	{
+		margin-right:0;
+	}
+	
+  
+}
+
+@media only screen and (min-width: 1000px) {
+	.wrapper
+	{
+		width:950px;
+		margin:0 auto;
+	}
+	.mobile {
+		display:none !important;
+	}
+	nav.desktop ul li 
+	{
+		margin-right:2.63157894736842%; /* 25 / 950 */
+	}
+	.faux
+	{
+		background:url(img/treatment-faux.png) repeat-y top right;
+	}
+	.page-treatments article
+	{
+		margin:0 62px 34px 0;
+	}
+	.page-treatments article:nth-child(even)
+	{
+		margin-right:62px;
+	}
+	.page-treatments article:nth-child(odd)
+	{
+		clear:none;
+	}
+	.page-treatments article:nth-child(3n+3)
+	{
+		margin-right:0;
+	}
+	/* ATOZ */
+	.post-type-archive-atoz .cat-container:nth-child(3n+3),
+	.post-type-archive-atoz .cat-container.last
+	{
+		margin-right:0px;
+	}
+	
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.mobile {
+		display:block !important;
+	}
+	.hidefromipad {
+		display:none!important;
+	}
+	#left-overlay, #right-overlay {
+		display:none;
+	}
+	#image-slider 
+	{
+		position:absolute;
+		top:0;
+		left:50px;
+	}
+	
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     /* Add your Safari-specific styles here. */
+	nav.desktop ul li.col9
+	{
+		margin-right:23px;
+	}
+	#left-overlay 
+	{
+		left:1px;
+		width:301px;
+	}
+	
+}
+
+
+/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+
+/* IE BUG FIXING */
+.ie7 article.last,
+.ie7 .cat-container.last
+{
+	margin-right:0;
+}
+
+/* TARGET SAFARI */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     nav.desktop ul li 
+	{
+		/*margin-right:23px;*/
+	}
+	.page-about-us #main aside a.colone .ribbon
+	{
+		width: 92.020408163%; /* 223 (originally 245) / 245 */
+	}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+	.logo
+	{
+		background:url(img/global/dermaskin-logo@2x.png) no-repeat top left;
+		-webkit-background-size: 297px 54px;
+		   -moz-background-size: 297px 54px;
+			 -o-background-size: 297px 54px;
+				background-size: 297px 54px;
+	}
+	.topbarlinks li.findabranch
+	{
+		background:url(img/global/find-a-branch@2x.png) no-repeat 0 0;
+		-webkit-background-size: 194px 57px;
+		   -moz-background-size: 194px 57px;
+			 -o-background-size: 194px 57px;
+				background-size: 194px 57px;
+	}
+	.topbarlinks li.referfriend
+	{
+		background:url(img/global/refer-a-friend-today@2x.png) no-repeat 0 0;
+		-webkit-background-size: 162px 51px;
+		   -moz-background-size: 162px 51px;
+			 -o-background-size: 162px 51px;
+				background-size: 162px 51px;
+	}
+	.topbarlinks li a.twitter
+	{
+		background:url(img/icons/twitter@2x.png) no-repeat 0 0;
+		-webkit-background-size: 40px 40px;
+		   -moz-background-size: 40px 40px;
+			 -o-background-size: 40px 40px;
+				background-size: 40px 40px;
+	}
+	.topbarlinks li a.facebook
+	{
+		background:url(img/icons/facebook@2x.png) no-repeat 0 0;
+		-webkit-background-size: 40px 40px;
+		   -moz-background-size: 40px 40px;
+			 -o-background-size: 40px 40px;
+				background-size: 40px 40px;
+	}
+	.topbarlinks li a.google
+	{
+		background:url(img/icons/google@2x.png) no-repeat 0 0;
+		-webkit-background-size: 40px 40px;
+		   -moz-background-size: 40px 40px;
+			 -o-background-size: 40px 40px;
+				background-size: 40px 40px;
+	}
+	.topbarlinks li a.refer
+	{
+		background:url(img/icons/refer-a-friend@2x.png) no-repeat 0 0;
+		-webkit-background-size: 40px 40px;
+		   -moz-background-size: 40px 40px;
+			 -o-background-size: 40px 40px;
+				background-size: 40px 40px;
+	}
+	li.select-container span.select
+	{
+		background:url(img/forms/select@2x.png) no-repeat 0 0;
+		-webkit-background-size: 240px 40px;
+		   -moz-background-size: 240px 40px;
+			 -o-background-size: 240px 40px;
+				background-size: 240px 40px;
+	}
+}
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* prevent callout */
+.nocallout {-webkit-touch-callout: none;}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {-webkit-appearance: none;}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if they have been set as display: none */
+.gifhidden {position: absolute; left: -100%;}
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

@@ -1,0 +1,9 @@
+------------------------------------------------------------
+DERMASKIN - Testimonial
+------------------------------------------------------------
+
+NAME:		|FNAME|
+EMAIL:		|EMAIL|
+TEL:		|TEL|
+WHEREFROM:	|WHEREFROM|
+FEEDBACK:	|FEEDBACK|
